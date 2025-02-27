@@ -1,53 +1,51 @@
-# Pankkiautomaattisovellus/group_12
+# ATM/Group_12
 
-Tämä projekti on tehty koulutyönä kurssille Ohjelmistokehityksen sovellusprojekti (IN00ED14-3003), jota ohjaavat ja opettavat Pekka Alaluukas sekä Teemu Korpela. Projektissa ovat olleet mukana Emma Takkinen, Erika Turtinen, Tero Asilainen sekä Terhi Wallin.
+This project was a part of Software Development Application Project Course (IN00ED14-3003) for Oulu University of Applied Sciences, led by Pekka Alaluukas and Teemu Korpela. Group 12 consisted of Emma Takkinen, Erika Turtinen, Tero Asilainen and Terhi Wallin.
 
 
+## Technologies Used
 
-Lyhyesti tekniikan osasista:
-
-Tietokantana meillä on käytössä MySQL. Tiukan pohdinnan ja opettajan palautteen jälkeen ER-kaaviosta muotoutui seuraavanlainen:
+Project uses a MySQL database. After some thorough reflection and teacher's feedback, Entity Relationship Model became as such:
 
 ER model
 <img src="ERmodel_Group12.png">
 
-API-rajapinnan toteutimme Node.js/express -tekniikalla. Työnjakona toimi sellainen, että jokainen opiskelija toteutti CRUD-operaatiot omaan tietokantatauluunsa.
+API was developed using Node.js/Express.js. Each student created all the CRUD-operations for their own database table.
 
+Desktop application was created with QtCreator. Some plans for our software:
 
-Työpöytäsovelluksen loimme QtCreatorilla. Suunnitelma voisi näyttää kutakuinkin seuraavalta:
-
-Kuva:
+Concept flow map:
 <img src="KoulutyöREADME.png">
 
-## Lisätoiminnot:
+## Extra Functionalities:
 
-- Tumma/Vaalea teema
-    -> Käyttäjä pystyy itse valitsemaan tumman tai vaalean teeman väliltä.
+- Dark/Light Mode
+    -> User can choose to use a vibrant white and pink theme, or a more eye saving dark one.
 
-- Kielivalinta
-    -> Käyttäjä voi valita käyttääkö suomen vai englannin kieltä.
+- Language Selection
+    -> Available languages are english and finnish.
 
-- Siirto
-    -> Käyttäjä voi siirtää rahaa omien tilien välillä.
+- Money Transfer
+    -> User can transfer money between their own accounts. Account selection with easy to use drop down menu.
 
-- Maksu
-    -> Käyttäjä voi suorittaa maksun valitsemalleen tilille.
+- Payment
+    -> User can create payments to their chosen account.
 
-- Ajastin
-    -> Jos käyttäjä ei paina mitään määritetyn ajan kuluessa, käyttäjä siirtyy edelliseen ikkunaan ja lopulta myös kirjataan ulos sovelluksesta.
+- Timer
+    -> User will return to main menu and eventually be logged out due to inactivity.
 
-## Työnjako
+## Tasks
 
 Emma
-- Saldokysely, käyttäjätiedot, account-taulun CRUD-toiminnot, tumma teema, sovelluksen suunnitelma...
+- Balance Inquiry, User Data, CRUD for Account table, Colors of the Dark Theme, Concept Map...
 
 Erika
-- Tilitapahtumat, maksu- ja nosto-toimintojen yhdistäminen Node.js:ään ja tietokantaan, tietokantaproseduurit, transaction-taulun ja account_user-taulun CRUD-toiminnot...
+- Transaction History, Backend for Payment and Withdrawal, Database Procedures, CRUD for Transaction and Account_user tables...
 
 Terhi
-- User-taulun CRUD-toiminnot, maksu- ja nosto-toimintojen käyttöliittymät, kielivalinta ja käännökset...
+- CRUD for User table, UI for Payment and Withdrawal, Language Selection and Translations...
 
 Tero
-- Card- ja card_account-taulujen CRUD-toiminnot, kirjautuminen, siirto-ominaisuus, vaalea teema, graafisen ulkoasun suunnitelu ja toteutus, tietokannan ja API:n siirtäminen Linux-palvelimelle...
+- CRUD for Card and Card_account tables, Login, Transfer, Lightmode Stylesheet from Scratch, GUI Design and Implementation, Migrating Database and API to Remote Server...
 
-Projektiin liittyvät dokumentit ja UML-kaaviot olemme tehneet ryhmän kesken.
+Documentation and various diagrams were made in collaboration.
