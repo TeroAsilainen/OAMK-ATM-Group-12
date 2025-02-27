@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/styles">
+        <file>resources/lightmode.qss</file>
+        <file>resources/darkmode.qss</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>resources/IconChecked.png</file>
+        <file>resources/IconUnChecked.png</file>
+        <file>resources/IconHover.png</file>
+    </qresource>
+    <qresource prefix="/translations">
+        <file>translations/bank-automat_en.qm</file>
+        <file>translations/bank-automat_en.ts</file>
+        <file>translations/bank-automat_fi.qm</file>
+        <file>translations/bank-automat_fi.ts</file>
+    </qresource>
+</RCC>

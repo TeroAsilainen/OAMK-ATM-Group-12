@@ -1,0 +1,2 @@
+create user bankuser@'localhost' identified by 'bankpass';
+grant all on bankdb.* to 'bankuser'@'localhost';
